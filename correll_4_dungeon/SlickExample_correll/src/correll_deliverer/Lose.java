@@ -65,6 +65,7 @@ public class Lose extends BasicGameState {
                 Special.isvisible = true;
                 Level1.reveal = false;
                 Level1.pass = false;
+                Level1.draw = false;
                 Orb.isvisible = true;
                 OrbRed.isvisible = true;
                 OrbYellow.isvisible = true;

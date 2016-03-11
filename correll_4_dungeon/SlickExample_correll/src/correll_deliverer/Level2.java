@@ -121,8 +121,8 @@ public class Level2 extends BasicGameState {
         orbzz.add(red);
         orbzzz.add(yellow);
         tr.add(trap);
-        tr2.add(trap2);
-        tr3.add(trap3);
+        tr.add(trap2);
+        tr.add(trap3);
 
     }
 
@@ -181,21 +181,6 @@ public class Level2 extends BasicGameState {
         }
         
             for (Trap t : tr) {
-                
-                    t.currentImage.draw(t.x, t.y);
-                    //g.draw(t.hitbox);
-
-            }
-        
-            
-            for (Trap t : tr2) {
-                
-                    t.currentImage.draw(t.x, t.y);
-                    //g.draw(t.hitbox);
-
-            }
-            
-            for (Trap t : tr3) {
                 
                     t.currentImage.draw(t.x, t.y);
                     //g.draw(t.hitbox);
@@ -289,6 +274,10 @@ public class Level2 extends BasicGameState {
             
             orbb = true;
             
+        } else {
+            
+            orbb = false;
+            
         }
 
         Level2.player.rect.setLocation(Level2.player.getPlayershitboxX(),
@@ -308,68 +297,78 @@ public class Level2 extends BasicGameState {
             }
         
         
-        for (Orb o : orbz) {
-            if (Level2.player.rect.intersects(o.hitbox)) {
-                if (o.isvisible) {
-                    
+        for (Orb b : orbz) {
+            if (Level2.player.rect.intersects(b.hitbox)) {
+                if (b.isvisible) {
+
                     blueb = true;
                     orbs++;
-                    o.isvisible = false;
+                    b.isvisible = false;
                     
                 }
             }
         }
 
-        for (OrbRed o : orbzz) {
-            if (Level2.player.rect.intersects(o.hitbox)) {
-                if (o.isvisible) {
+        for (OrbRed r : orbzz) {
+            if (Level2.player.rect.intersects(r.hitbox)) {
+                if (r.isvisible) {
                     
                     redb = true;
                     orbs++;
-                    o.isvisible = false;
+                    r.isvisible = false;
                     
                 }
             }
         }
 
-        for (OrbYellow o : orbzzz) {
-            if (Level2.player.rect.intersects(o.hitbox)) {
-                if (o.isvisible) {
+        for (OrbYellow y : orbzzz) {
+            if (Level2.player.rect.intersects(y.hitbox)) {
+                if (y.isvisible) {
                     
                     yellowb = true;
                     orbs++;
-                    o.isvisible = false;
+                    y.isvisible = false;
                     
                 }
             }
         }
         
         for (Trap t : tr) {
-            if (Level2.player.rect.intersects(t.hitbox)) {
-                     
-                    Level2.player.x = 45;
-                    Level2.player.y = 200;
+            if (player.rect.intersects(t.hitbox)) {
+                if (orbs > 0) {
+                    if (!Orb.isvisible) {
+                        
+                        blueb = false;
+                        Orb.isvisible = true;
+                        
+                    } 
+                    
+                    else if (!OrbRed.isvisible) {
+                        
+                        redb = false;
+                        OrbRed.isvisible = true;
+                        
+                    }
+                    
+                    else if (!OrbYellow.isvisible) {
+                        
+                        yellowb = false;
+                        OrbYellow.isvisible = true;
+                        
+                    }
+                        orbs--;
+                        player.x = 45;
+                        player.y = 200;
+                    
+                } else {
+                    
+                    sbg.enterState(4, new FadeOutTransition(Color.white), new FadeInTransition(Color.white));
                 
-            }
+                }
+                
+        }
         }
         
-        for (Trap t : tr2) {
-            if (Level2.player.rect.intersects(t.hitbox)) {
-                     
-                    Level2.player.x = 45;
-                    Level2.player.y = 200;
-                    
-            }
-        }
-        
-        for (Trap t : tr3) {
-            if (Level2.player.rect.intersects(t.hitbox)) {
-                     
-                    Level2.player.x = 45;
-                    Level2.player.y = 200;
-                    
-            }
-        }
         
         if (damage.isIsVisible()) {
             if (player.getDirection() == 0) {
@@ -403,6 +402,7 @@ public class Level2 extends BasicGameState {
             
             }
     }
+    
 
     public int getID() {
         

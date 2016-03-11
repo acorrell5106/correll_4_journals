@@ -3,6 +3,7 @@ package correll_deliverer;
 import static correll_deliverer.Level2.blueb;
 import static correll_deliverer.Level2.damage;
 import static correll_deliverer.Level2.orbb;
+import static correll_deliverer.Level2.orbs;
 import static correll_deliverer.Level2.player;
 import static correll_deliverer.Level2.redb;
 import static correll_deliverer.Level2.yellowb;
@@ -39,8 +40,6 @@ public class Level1 extends BasicGameState {
     public ArrayList<Item> stuff = new ArrayList();
     public ArrayList<Special> item = new ArrayList();
     public ArrayList<Trap> tr = new ArrayList();
-    public ArrayList<Trap> tr2 = new ArrayList();
-    public ArrayList<Trap> tr3 = new ArrayList();
     public ArrayList<Crystal> cry = new ArrayList();
     
     private static TiledMap grassMap2;
@@ -59,9 +58,8 @@ public class Level1 extends BasicGameState {
     public void init(GameContainer gc, StateBasedGame sbg)
             throws SlickException {
 
-        //music = new Music("res/");
-        //music.loop(1.0f, 5.0f);
-        //music.play;
+        music = new Music("res/music.ogg");
+        music.loop(1.0f, 5.0f);
         gc.setTargetFrameRate(60);
         gc.setShowFPS(false);
         grassMap2 = new TiledMap("res/level1.tmx");
@@ -118,8 +116,8 @@ public class Level1 extends BasicGameState {
         gp.add(gportal);
         item.add(special);
         tr.add(trap);
-        tr2.add(trap2);
-        tr3.add(trap3);
+        tr.add(trap2);
+        tr.add(trap3);
         cry.add(crystal);
 
     }
@@ -138,7 +136,7 @@ public class Level1 extends BasicGameState {
             if (damage.isVisible) {
             
             damage.currentImage.draw(damage.getX(), damage.getY());
-                g.draw(damage.hitbox);
+                //g.draw(damage.hitbox);
             
         }    
                 
@@ -160,20 +158,6 @@ public class Level1 extends BasicGameState {
             }
         }
             for (Trap t : tr) {
-                
-                    t.currentImage.draw(t.x, t.y);
-                    //g.draw(t.hitbox);
-     
-        }
-            
-            for (Trap t : tr2) {
-                
-                    t.currentImage.draw(t.x, t.y);
-                    //g.draw(t.hitbox);
-            
-        }
-            
-            for (Trap t : tr3) {
                 
                     t.currentImage.draw(t.x, t.y);
                     //g.draw(t.hitbox);
@@ -265,6 +249,16 @@ public class Level1 extends BasicGameState {
             damage.setIsVisible(!damage.isIsVisible());
             
         }
+        
+        if (blueb && redb && yellowb) {
+            
+            orbb = true;
+            
+        } else {
+            
+            orbb = false;
+            
+        }
 
         Level1.player.rect.setLocation(Level1.player.getPlayershitboxX(),
                 Level1.player.getPlayershitboxY() + 50);
@@ -296,34 +290,7 @@ public class Level1 extends BasicGameState {
             }
         }
     }
-        
-        for (Trap t : tr) {
-            if (Level1.player.rect.intersects(t.hitbox)) {
-                     
-                    Level1.player.x = 550;
-                    Level1.player.y = 77;
-                                 
-            }
-        }
-        
-        for (Trap t : tr2) {
-            if (Level1.player.rect.intersects(t.hitbox)) {
-                     
-                    Level1.player.x = 550;
-                    Level1.player.y = 77;
-                    
-            }
-        }
-        
-        for (Trap t : tr3) {
-            if (Level1.player.rect.intersects(t.hitbox)) {
-                     
-                    Level1.player.x = 550;
-                    Level1.player.y = 77;
-                
-            }
-        }
-        
+     
         for (Crystal c : cry) {
             if (damage.hitbox.intersects(c.hitbox)) {
                 if (c.isvisible) {
@@ -335,6 +302,42 @@ public class Level1 extends BasicGameState {
                     
                 }                      
             }
+        }
+        
+        for (Trap t : tr) {
+            if (player.rect.intersects(t.hitbox)) {
+                if (Level2.orbs > 0) {
+                    if (!Orb.isvisible) {
+                        
+                        blueb = false;
+                        Orb.isvisible = true;
+                        
+                    } 
+                    
+                    else if (!OrbRed.isvisible) {
+                        
+                        redb = false;
+                        OrbRed.isvisible = true;
+                        
+                    }
+                    
+                    else if (!OrbYellow.isvisible) {
+                        
+                        yellowb = false;
+                        OrbYellow.isvisible = true;
+                        
+                    }
+                        Level2.orbs--;
+                        player.x = 50;
+                        player.y = 560;
+                    
+                } else {
+                    
+                    sbg.enterState(4, new FadeOutTransition(Color.white), new FadeInTransition(Color.white));
+                
+                }
+              
+        }
         }
         
         if (damage.isIsVisible()) {
@@ -390,3 +393,4 @@ public class Level1 extends BasicGameState {
 
     }
 }
+

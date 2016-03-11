@@ -33,6 +33,9 @@ public class Menu extends BasicGameState {
 
             throws SlickException {
         startimage.draw();
+        
+        g.setColor(Color.white);
+        g.drawString("Make sure you \ncheck the \nInstructions \n(Press I)", 150, 180);
 
     }
 
