@@ -7,5 +7,11 @@ First, a circuit must have power, otherwise nothing would work in the circuit. A
 	How are programs complied with Arduino?
 For the computer to run the code, the computer first has to understand the code. The Arduino IDE converts the code written into a language that the computer can read and understand, allowing the programs to run. The program is compiled when the IDE changes it into the computer's language.
 	Describe the projects you have completed this/last week and what you have learned from them. Descriptions should be at least one paragraph in length.
-
+The first project we did as a team was circuit 1, or the blinking LED. This circuit would do just as it said it would, which was making the LED blink. 
+This circuit taught us about the two functions "setup()" and "loop()", as well as the "pinMode()" function, which confingures the pins and their outputs. 
+We also learned about the HIGH and LOW settings concerning the LEDs, allowing them to turn the light on and off. 
+Finally, we learned about "delay" and how we can delay the code for a certain number of time. As for the actual board, we became accustomed to the different pins and their locations
+on the breadboard, as well as the different pins on the red board. After this circuit, we just built along these basic ideas, using the potentiometer, RGB LED, push buttons, 
+photo resistor, temperature sensor, servo, flex sensor, soft potentiometer, piezo buzzer, DC motor, and LCD. All of their corresponding circuits gave us more code to work with, 
+allowing many more things to be create using the code given. Now, we have a huge library of resources to create our independent project. 
 	Describe your project and the code adaptions you will have to make.
