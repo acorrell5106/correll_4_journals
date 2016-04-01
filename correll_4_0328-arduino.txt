@@ -1,0 +1,11 @@
+	What differences and similarities (Arduino uses a variant of the C programming language) have you noticed? Provide at least 3 and explain in complete sentences.
+One similarity I noticed was the fact that Arduino uses functions, which, like Java or other C programming languages, allows the code to run sort of like a method. I also saw that they share some of the same datatypes, such as ints. Another similarity was the fact that the code would pass values, much like Java can. One difference was that I could not see any classes or objects, meaning that Arduino is not an object oriented program.
+	What code adaptions have you made, or will make?
+For the projects we did, we did not have to make any code adaptions. However, there were some spots where we could have adapted the code, changing what the Arduino was going to do. We could have done something rather simple, such as changing the LED delay to 2000 milaseconds rather than 1000, or we could have changed the song on the buzzer by altering the notes played and the rests.
+	What is required for a circuit?
+First, a circuit must have power, otherwise nothing would work in the circuit. A circuit must have a starting and ending point: This is what makes it a circuit. In between this loop, there can be any number of components included in the circuit, which will make use of the power and perform a function/action.
+	How are programs complied with Arduino?
+For the computer to run the code, the computer first has to understand the code. The Arduino IDE converts the code written into a language that the computer can read and understand, allowing the programs to run. The program is compiled when the IDE changes it into the computer's language.
+	Describe the projects you have completed this/last week and what you have learned from them. Descriptions should be at least one paragraph in length.
+
+	Describe your project and the code adaptions you will have to make.
