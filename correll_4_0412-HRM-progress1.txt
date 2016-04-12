@@ -1,0 +1,4 @@
+	Explain your biggest problem-solving challenge that you solved.
+The most difficult level from HRM that I have solved was level 11, where you had to subtract multiple numbers a certain way to finish the level. The difficult part about this was trying to wrap my head around what it was asking, but I ended up figuring it out by tinkering around and seeing what worked, which later led to the level's completion.
+	Explain the rationale behind the last problem you solved. Provide an overview of the steps of the program.
+For my program, I first went to the inbox and then copied it to spot 0. Then, I grabbed the next number from the inbox and placed it in spot 1. After that, the code takes the second number and subtracts the first from it, then places that in the outbox. After this, it goes and copies the first number and then subtracts the second from it, then places that in the outbox. The program then loops, until all of the numbers in the inbox are gone.
