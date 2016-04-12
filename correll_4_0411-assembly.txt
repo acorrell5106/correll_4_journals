@@ -1,0 +1,12 @@
+	What is assembly?
+Assembly, or asm, is a low-level programming lanaguage where there is a strong relationship between the language and the architecture's machine code instructions.
+	What is it good for?
+Assembly is good when you want to create something that is vast and simple, and and program maintenance is easier.
+	How is assembly different than Java?
+Assembly is not very abstract, and Java is abstract.
+	What are differences between high level and low level languages?
+While high level languages are very abstract, low level has little to no abstraction.
+	Which type is Java? How do you know, i.e., what characteristics does it have of that language type?
+Java is a high-level language because there is a lot of abstraction between the language and the machine language.
+	Which type is assembly? How do you know, i.e., what characteristics does it have of that language type?
+Assembly is a low-level language because there is a little to no abstraction difference between the language and machine language, and is close to the hardware.
