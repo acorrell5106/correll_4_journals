@@ -1,0 +1,10 @@
+  What have you done?
+We have created a program that allows the buzzer to play a tune, and will go up a note whenever a button is pressed. After the scale has been played, the notes will repeat from the beginning and continue when the button is pressed.
+  What do you need to do?
+We need to add LEDs for each of the notes played. After that, the first stage of our project will be complete, and we will be able to start with more complex additions to our tuner. We plan to add an LCD, which will show the frequency of the notes played, as well as the tone's name. Then, we will have the buzzer detect outside frequencies, and create a fully functioning tuner.
+  What will you be able to turn in on Friday?
+By Friday, we should have the LEDs added and have the working tuner with the buzzer and button.
+  What code changes are you writing?
+Instead of using previous example codes, we have started from scratch and created our own program. Since the program is rather simple, we did not really need anything from the other code, except for pinMode and some of the button code from example #5.
+  What functions have you created?
+Like I stated in the previous question, our program is very simple, so we have not found the need to create our own functions. The most we created was multiple if statements to have the buttons cycle through all of the notes, then repeat.
