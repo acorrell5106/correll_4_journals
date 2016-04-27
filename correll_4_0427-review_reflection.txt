@@ -1,0 +1,5 @@
+	Why are students encouraged to learn CS?
+In CS, instead of memerizing facts, we have to learn to understand concepts and apply them to our other learning. So, instead of being told step by step how to do every single program, we have to take our knowledge from previos experiences and projects and apply them to what we are currently working on. This can be a frustrating process, because the connections might not be that clear or we simply don't understand how something can work a different way than what we were originally taught. However, CS encourages the growth of these skills, and allows us to use them not only in this class but in others and in life. We learn how to problem solve, which is an extremely useful skill wherever you end up.
+	What should students learn from CS?
+Students should be able to learn how to problem solve, and to be able to apply previous knowledge to a different instance.
+	
