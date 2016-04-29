@@ -1,0 +1,30 @@
+	Write a Java method to return the cubed value of some number:
+int cubed() {
+            answer = number * number * number;
+            return answer;
+            
+        }
+	Write an Arduino function to return the cubed value of some number:
+int cubed() {
+            answer = number * number * number;
+            return answer;
+            
+        }
+	Create the class, a class constructor, and an object for class Student:
+public class Student {
+	public int grades;
+	public String classes;
+	public boolean tardy;
+}
+
+Student(int a, String b) {
+	this.grades = a;
+	this.classes = b;
+	this.tardy = true;
+}
+
+public Student michael;
+
+michael = new Student(90, Physics);
+	Describe - if we were to continue with Arduino - what would you create?
+If we were to continue with our Arduino project, we would aim to create a tuner with multiple octives instead of one, and possibly have the piezo detect noises and determine their frequency.
