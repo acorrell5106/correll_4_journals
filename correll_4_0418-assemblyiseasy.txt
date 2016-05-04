@@ -1,0 +1,12 @@
+	For what computational reason did you type elf64?
+We typed elf64 because it will allocate the necessary info for a 64 bit file, allowing the assembly file to be excecuted.
+	Why did you use ld?
+We typed ld because it allows the code we typed to become formatted in another way to run it in the commnad line. Without it, our code would not be able to run because it was not formatted the way that the computer needs it to be.
+	Why did you not have to use chmod to make sample executable?
+You did not need to use chmod because elf64 and ld already perform its functions by exucuting, linking, and validating the file.
+	What problem did you have to solve to get it to work?
+To get the program to print my name, I had to change the number of bytes from 15 to 23, which it allowed to print the whole statement.
+	Is assembly 'quick and easy'? Why or why not?
+Assembly is not 'quick and easy' because ot is tedious to write it, since it is difficult to understand and write. This is because the language is closer to the computer's cpmutational language, so it does not need to translate what you write as much as a language like Java.
+	What does 'low level' actually mean with regards to programming languages?
+'Low level' actually means that the language is closer to the computer's language, so the computer does not need to translate what you write to run. This makes the program very quick, but not quick to write.
