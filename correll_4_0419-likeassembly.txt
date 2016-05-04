@@ -1,0 +1,4 @@
+	Describe - what similarites do you notice between assembly and Human Resource Machine?
+One of the things I noticed that was similar was the jump statements, as well as the conditional jump statements. For example, both assembly and HRM have a normal jump statement, a jump if zero statement, and a jump if negative statememt.
+	Describe - what differences do you notice between assembly and Human Resource Machine?
+Like mentioned above, both assembly and HRM have jump statements. However, assembly seems to have a much wider range of jump statements, such as jump greater, jump less, jump equal, jump if overflow, jump no sign, and many more statements that you cannot get in HRM.
