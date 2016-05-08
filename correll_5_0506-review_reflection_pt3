@@ -1,0 +1,33 @@
+  Given mymap[67][43], which is the x coordinate, and which is the y? Why?
+43 is the x coordinate and 67 is the y because 67 = i and 43 = j. In the for loop, i creates the columns and j creates the rows. Therfore, i is the y and j is the x, making 67 = y and 43 = x.
+  Write the code from line #a and explain what it does.
+if (i=0){ System.out.print("8888");
+This will check to see if i, or the y coordinate, is equal to 0 and it will print out "8888" if it does.
+  Write the code from line #b and explain what it does.
+System.out.print(map[i][j]);
+This will print out the i and j values, or the y and the x, all across the current row.
+  Write the code from line #c and explain what it does. Explain how it is different from #e.
+System.out.println(".");
+This will place a "." in the array if it does not find any other char to replace it. This is different from #e because it will print on the next line, creating a column, unlike what #e does.
+  Write the code from line #d and explain what it does.
+System.out.println(map[i][j]);
+This will do exactly what #b will do, but it will instead print out the i and j values on the next line, creating columns.
+  Explain how to use a boolean with a while loop.
+To create a while loop and have it utilize a boolean, you would just set up the while loop and place what you want the while loop's condition to be, in this case a boolean, and have it be either true or false. Here's an example of a while loop using a boolean:
+while (!win) {
+  System.out.print("You have not won yet.");
+}
+This while loop will continue to run if the boolean win is false, and will continue to print out the statement until win becomes true.
+  Explain the use of static.
+Static is used for variables where you want to have the value shared across all instances, so when you change one instamce of the value the others will change with it.
+  Provide an example of how you could use an object with your game.
+An example of an object in my game would be to create a player object. To do this, I would first start with a Player class, such as this one:
+public class Player
+Then, I would add important values that my player object would need, such as coordintates, and health:
+public int playerx;
+public int playery;
+public int playerhp;
+Next, I would create the class constructor, filling in values where it is neccessary, and then I would declare my player object:
+Player player1;
+Finally, I would initialize the player object, allowing me to use my new object for my game:
+player1 = new Player();
