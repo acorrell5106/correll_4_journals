@@ -1,0 +1,27 @@
+	What is an array?
+An array is a list of things, and it contains a number of one datatype.
+	How does one make a simple array of Strings?
+String[] list = new String[5];
+	What is the syntax for a 2-D array?
+char[][] array = new char[5][5];
+	What is the syntax for a 3-D array?
+char[][][] array = new char[5][5][5];
+	How does one change the value for the third value in a one dimensional array? [Give specific code]
+String[] list = new String[5];
+
+list[3] = "Cat"; 
+	What is the syntax for a while loop?
+while (!win || !lose) {
+}
+	Why use while loops in your game?
+It's a good idea to create while loops in the game because we can use them to repeat a certain section of the code until some requirement is met, where in which the while loop will end.
+	How will you call your game in main?
+To call my game in main, I just called the name of the method. For example, I would type:
+movement();
+in main since movement is the name of my method that needs to be run. 
+	Why was it recommended that you use .toLowerCase() with your Scanner input?
+It was recommended to use .toLowerCase() because it would simplify all player inputs to lower case, so you do not need to have so many variables to check in your if statements.
+	Why and how should you use different methods for movement and intersections?
+You should create different methods for movement and intersection because it will simplify the code and you may need to call only one at a time if needed, and creating methods allows you to do that.
+	Where could you pass values?
+A place where you could pass values in the game would be in a class used to create objects, so you would be able to pass values to the class constructor the be able to set specific variables.
