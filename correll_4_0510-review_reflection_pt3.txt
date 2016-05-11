@@ -1,0 +1,56 @@
+	Create a class for 'hero', a class constructor, and an example of an initialized object.
+public class Hero {
+public String name;
+public int herox;
+public int heroy;
+public int hp;
+public char symbol;
+public int dexterity;
+public int perception;
+public int score;
+public int level;
+public String weapon;
+
+public Hero(int a, int b, String c, char d) {
+	this.herox = a;
+	this.heroy = b;
+	this.name = c;
+	this.symbol = d;
+}
+
+public int getHerox() {
+	return herox;
+}
+
+public void setHerox(int herox){
+	this.herox = herox;
+}
+
+public int getHeroy() {
+	return heroy;
+}
+
+public void setHeroy(int heroy){
+	this.heroy = heroy;
+}
+
+public String getName() {
+	return name;
+}
+
+public void setName(String name){
+	this.name = name;
+}
+
+public char getSymbol() {
+	return symbol;
+}
+
+public void setSymbol(char symbol){
+	this.symbol = symbol;
+} 
+
+addison = new Hero(20, 20, "Addison", '@');
+
+	Explain why you would not initialize the hero in the class Hero.
+You have to initialize the object outside of the class because the class only gives the object its values, and can do nothing else with it. You have to put it in an area where the object is needed, such as the main game.
