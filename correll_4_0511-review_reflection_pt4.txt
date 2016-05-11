@@ -1,0 +1,2 @@
+	What happens with nested for loops?
+When you create a nested loop, the first loop created will control the number of times that the second loop will run, and will stop the second loop when  it stops.
