@@ -1,0 +1,13 @@
+	Did you recognize the 2D array from a previous project/journal? Why?
+I remembered the 2D array from a previous journal becuase I did not know what it did at the time, so I decided to create the array in Netbeans to understand what it was supposed to do, and I was able to use this as the base for this array game project.
+	Make a list of ten questions related to the Array assignments pt 1 and 2 - that you predict will be on the final exam.
+1. How do you create a Class?
+2. How do you declare and initialize an object from that Class?
+3. What is a class constructor, and how do you create one?
+4. How do you create an array? An Arraylist? What is the difference between the two?
+5. Why is it important to have multiple methods?
+6. How do you use a while loop? A for loop?
+7. How do you pass values?
+8. What is static?
+9. How do you create a 2D array? A 3D array?
+10. How can you accept user input?
