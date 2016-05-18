@@ -1,0 +1,14 @@
+	Explain casting. Up-casting, Down-casting.
+Casting is the process of taking a variable with a certain type and turning it in to a different variable with a different type. Up-casting is taking a variable with a specific type and turning it in to a variable with a more generic type. Down-casting is taking a variable with a generic type and turning it in to a variable with a more specific type.
+	Give a specific code example for up-casting.
+int animal = 5;
+float cat;
+cat = animal;
+	Give a specific code example for down-casting.
+(with previous)
+animal = (int)cat;
+	Give a specific code example for converting a char to a String.
+char pear = '^';
+String apple = "" + ^;
+	What is the range of values for byte? Why?
+The range of a byte is -128 to 127 because they are used for their integer limits to clarify code.
