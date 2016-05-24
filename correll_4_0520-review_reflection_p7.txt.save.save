@@ -1,0 +1,29 @@
+﻿	Provide an example class with a class constructor.
+public class Ogre {
+	public int x;
+	public int y;
+	public String weapon;
+
+	public Ogre(int a, int b, String c) {
+		this.x = a;
+		this.y = b;
+		this.weapon = c;
+	}
+
+}
+	Give an example of instantiation of an Ogre object.
+//delarization
+public static Ogre uruk-hai;
+//initialization
+uruk-hai = new Ogre(10, 10, "Axe");
+	Provide a setter for positioning.
+public void setPositioning(int x){
+	this.x = x;
+}
+	Provide an example of using an ogre's move method.
+
+	Provide an example array of 3 ogres.
+Ogre[] array = new Ogre[2];
+array[0] = ogre1;
+array[1] = ogre2;
+array[2] = ogre3;
