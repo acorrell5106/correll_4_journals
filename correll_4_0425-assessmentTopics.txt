@@ -1,0 +1,12 @@
+	What are 10 concepts you believe will be covered on the test? Why?
+1. Basic Java Syntax - how to set up a Java program, something we should already know when doing our projects
+2. How to create a Class, method, e.t.c. - how to set up the different parts of the program, such as classes and methods
+3. Datatypes - knowing what the datatypes are and what we use them for
+4. arrays and Arraylists - knowing their uses and differences
+5. Objects - knowing what they are and how we can use them in our program
+6. Getters and Setters - knowing what these are and why we would need to use them
+7. Encapsulation - what this is and why we need to know this
+8. for loops - how we can use these in our programs and understanding how they work
+9. OOP - what this is and why we need to know how it is related to Java
+10. Passing Values - why we need to know how to do this and why it is useful
+Overall, I picked these concepts because we have been around all of them while creating our programs, and we should and need to know what these are in order to create our programs and projects. Without them, we would most likely not have anything in our projects.
