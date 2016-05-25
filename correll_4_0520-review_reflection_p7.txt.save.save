@@ -21,7 +21,16 @@ public void setPositioning(int x){
 	this.x = x;
 }
 	Provide an example of using an ogre's move method.
+Scanner Movement = new Scanner(System.in);
+move = Movement.nextLine():
 
+if (move.contains("n")) {
+	urak-hai.y--;
+} else if (move.contains("e")) {
+	uruk-hai.x++;
+}
+//if the ogre moves north, his y coordinate will decrease
+//if the ogre moves east, his x coordinate will increase
 	Provide an example array of 3 ogres.
 Ogre[] array = new Ogre[2];
 array[0] = ogre1;
